@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HESA Çelik — Çelik Fabrika, Cephe Panel ve Çelik Çatı</title>
+<meta name="description" content="HESA Çelik; çelik fabrika binaları, fabrika dış cephe panel kaplama ve çelik çatı sistemlerinde projeden montaja kadar işin tamamını üstlenir.">
+<meta name="theme-color" content="#0e1114">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  // açılış oturumda bir kez; hareketi azalt açıksa hiç
+  (function () {
+    var d = document.documentElement, seen = false;
+    try { seen = sessionStorage.getItem('hesa-intro-seen') === '1'; } catch (e) {}
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var q = location.search;
+    d.className = (seen || reduce) && q.indexOf('t=') < 0 ? 'js ready' : 'js intro';
+  })();
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 200 104">
+    <path style="fill:var(--orange)" d="M0 0H13V24.5Q13 28.5 17 28.5H31Q35 28.5 35 24.5V0H48V64H35V39.5Q35 35.5 31 35.5H17Q13 35.5 13 39.5V64H0Z"/>
+    <path fill="currentColor" fill-rule="evenodd" d="M56 0H96V13H70V25.5H90V38.5H70V51H96V64H56Z M146 0V13H118V25.5H138L146 33.5V56L138 64H104V51H132V38.5H112L104 30.5V8L112 0Z M154 64V14L168 0H186L200 14V64H186V44H168V64Z M168 14H186V31H168Z"/>
+    <rect x="0" y="86" width="88" height="4" style="fill:var(--orange)"/>
+    <path style="fill:var(--logo-sub)" d="M97.5 78H113.5V82.5H102V93.5H113.5V98H97.5Z M103.5 99.5H108V103.5H103.5Z M122.5 78H137.5V82.5H127V85.75H135.5V90.25H127V93.5H137.5V98H122.5Z M146.5 78H151V93.5H160.5V98H146.5Z M169.5 78H174V98H169.5Z M169.5 71.5H174V75.5H169.5Z M183 78H187.5V85.6L194 78H199.5L191.6 87.4L200 98H194.3L187.5 89.6V98H183Z"/>
+  </symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#top" aria-label="HESA Çelik ana sayfa"><svg viewBox="0 0 200 104"><use href="#logo"/></svg></a>
+  <nav class="nav-links" aria-label="Ana menü">
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#panel">Cephe panel</a>
+    <a href="#surec">Süreç</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <a class="btn btn-sm btn-primary nav-cta" href="#iletisim">Teklif alın</a>
+  <button class="nav-burger" aria-label="Menüyü aç" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main>
+<!-- ============ GİRİŞ ============ -->
+<section class="hero" id="top">
+  <canvas id="scene" aria-label="Çelik fabrika binasının yapım animasyonu"></canvas>
+  <svg class="hero-fallback" viewBox="0 0 640 360" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+      <path class="draw" pathLength="1" d="M40 300H600"/>
+      <path class="draw" pathLength="1" d="M150 300V180L320 140L490 180V300"/>
+      <path class="draw" pathLength="1" d="M190 300V170L360 130L530 170V300" opacity=".55"/>
+      <path class="draw" pathLength="1" d="M230 300V160L400 120L570 160V300" opacity=".3"/>
+      <path class="draw" pathLength="1" d="M150 180l80-20M320 140l80-20M490 180l80-20" opacity=".6"/>
+    </g>
+  </svg>
+  <div class="hero-shade"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow"><span class="pip"></span>Çelik yapı · Cephe · Çatı</p>
+    <h1 class="hero-title">
+      <span class="ln"><span>Fabrikanızı</span></span>
+      <span class="ln"><span>çelikle ayağa</span></span>
+      <span class="ln"><span class="hl">kaldırıyoruz.</span></span>
+    </h1>
+    <p class="hero-sub">Çelik fabrika binaları, dış cephe panel kaplama ve çelik çatı sistemlerinde statik projeden montaja kadar işin tamamı tek elden.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#iletisim">Projenizi konuşalım <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="#hizmetler">Neler yapıyoruz</a>
+    </div>
+  </div>
+
+  <div class="hud" aria-hidden="true">
+    <div class="hud-top">
+      <span class="hud-step">01</span>
+      <span class="hud-name">Aplikasyon ve temel</span>
+      <span class="hud-time">00.0</span>
+    </div>
+    <div class="hud-bar"><i></i></div>
+    <ol class="hud-ticks"></ol>
+  </div>
+  <button class="skip" type="button">Geç <span aria-hidden="true">›</span></button>
+
+  <div class="hero-foot">
+    <div class="spec mono">
+      <span>Portal çerçeve</span><span>24 m açıklık</span><span>48 m boy</span><span>8 m saçak</span>
+    </div>
+    <button class="replay mono" type="button"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8a5 5 0 1 0 1.6-3.7M3 2v3h3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Yapımı tekrar izle</button>
+  </div>
+  <a class="scroll-cue mono" href="#manifesto" aria-label="Aşağı kaydır"><span>Kaydır</span><i></i></a>
+</section>
+
+<!-- ============ MANİFESTO ============ -->
+<section class="manifesto" id="manifesto">
+  <div class="wrap">
+    <p class="kicker mono" data-reveal>— Yaklaşımımız</p>
+    <p class="scrub-text" data-scrub-words>Ağır çelikte işin sırrı sahaya gelmeden önce çözülür. Doğru hesap, temiz imalat ve milimetrik montaj; binanız da ancak böyle yıllarca aynı sağlamlıkta ayakta kalır.</p>
+  </div>
+</section>
+
+<!-- ============ HİZMETLER ============ -->
+<section class="services" id="hizmetler">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker mono" data-reveal>— Hizmetler</p>
+      <h2 data-split>Üç ana iş. Tek sorumluluk.</h2>
+    </header>
+
+    <div class="cards">
+      <article class="card" data-reveal style="--d:0">
+        <div class="card-art">
+          <svg viewBox="0 0 320 200" aria-hidden="true">
+            <g fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+              <path class="draw ground" pathLength="1" d="M20 176H300"/>
+              <path class="draw faint" style="--i:1" pathLength="1" d="M104 142V72L204 44L304 72V142"/>
+              <path class="draw faint" style="--i:2" pathLength="1" d="M82 156V86L182 58L282 86V156"/>
+              <path class="draw" style="--i:3" pathLength="1" d="M60 170V100L160 72L260 100V170"/>
+              <path class="draw faint" style="--i:5" pathLength="1" d="M60 100L104 72M160 72L204 44M260 100L304 72M60 170L104 142M260 170L304 142"/>
+              <path class="draw accent" style="--i:6" pathLength="1" d="M260 170L282 86M282 156L260 100"/>
+            </g>
+          </svg>
+        </div>
+        <span class="card-no mono">01</span>
+        <h3>Çelik fabrika yapıları</h3>
+        <p>Portal çerçeveli üretim tesisleri, depolar ve lojistik binaları. Kolon, makas, aşık ve bağlantı detaylarıyla eksiksiz taşıyıcı sistem.</p>
+        <ul class="tags mono"><li>Portal çerçeve</li><li>Kafes kiriş</li><li>Vinç yollu hol</li></ul>
+      </article>
+
+      <article class="card" data-reveal style="--d:1">
+        <div class="card-art">
+          <svg viewBox="0 0 320 200" aria-hidden="true">
+            <g fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+              <path class="draw ground" pathLength="1" d="M20 176H300"/>
+              <path class="draw" pathLength="1" d="M48 170V40H272V170"/>
+              <path class="draw faint" style="--i:1" pathLength="1" d="M64 170V40M80 170V40M96 170V40M112 170V40M128 170V40"/>
+              <path class="draw faint" style="--i:2" pathLength="1" d="M144 170V40M160 170V40M176 170V40M192 170V40"/>
+              <path class="draw faint" style="--i:3" pathLength="1" d="M208 170V40M224 170V40M240 170V40M256 170V40"/>
+              <path class="draw accent" style="--i:5" pathLength="1" d="M48 100H272M48 116H272"/>
+            </g>
+          </svg>
+        </div>
+        <span class="card-no mono">02</span>
+        <h3>Cephe panel kaplama</h3>
+        <p>Sandviç panel, trapez sac ve kaset cephe uygulamalarıyla yalıtımlı, temiz hatlı ve uzun ömürlü fabrika dış cepheleri.</p>
+        <ul class="tags mono"><li>Sandviç panel</li><li>Trapez sac</li><li>Kaset cephe</li></ul>
+      </article>
+
+      <article class="card" data-reveal style="--d:2">
+        <div class="card-art">
+          <svg viewBox="0 0 320 200" aria-hidden="true">
+            <g fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+              <path class="draw ground" pathLength="1" d="M20 176H300"/>
+              <path class="draw" pathLength="1" d="M30 120H290L160 56Z"/>
+              <path class="draw faint" style="--i:2" pathLength="1" d="M56 120L82 107L108 120L134 94L160 120L186 94L212 120L238 107L264 120"/>
+              <path class="draw faint" style="--i:3" pathLength="1" d="M82 107V120M134 94V120M186 94V120M238 107V120M160 56V120"/>
+              <path class="draw" style="--i:4" pathLength="1" d="M40 120V176M280 120V176"/>
+              <path class="draw accent" style="--i:6" pathLength="1" d="M22 124L160 50L298 124"/>
+            </g>
+          </svg>
+        </div>
+        <span class="card-no mono">03</span>
+        <h3>Çelik çatı sistemleri</h3>
+        <p>Geniş açıklıklı çatı makasları, çatı kaplaması, ışıklık ve yağmur suyu detaylarıyla birlikte; anahtar teslim çatı.</p>
+        <ul class="tags mono"><li>Kafes makas</li><li>Çatı paneli</li><li>Işıklık ve dere</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PANEL (kaydırmaya bağlı) ============ -->
+<section class="panel-sec" id="panel">
+  <div class="panel-sticky">
+    <div class="wrap panel-grid">
+      <div class="panel-copy">
+        <p class="kicker mono">— Cephe panel kaplama</p>
+        <h2>Bir cephe paneli,<br>üç katman.</h2>
+        <ol class="layers">
+          <li><span class="mono">A</span><div><b>Dış yüzey</b>Boyalı galvaniz sac. Trapez nervürlü ya da düz; rengi kurumsal kimliğinize göre seçilir.</div></li>
+          <li><span class="mono">B</span><div><b>Yalıtım çekirdeği</b>Poliüretan (PIR/PUR) ya da yangına karşı taş yünü. Isıyı ve sesi içeride tutar.</div></li>
+          <li><span class="mono">C</span><div><b>İç yüzey</b>Hijyenik, temizlenebilir boyalı sac. Üretim alanının iç cephesi de hazır gelir.</div></li>
+          <li><span class="mono">D</span><div><b>Gizli bağlantı</b>Paneller dilli birleşimle oturur, vida dışarıdan görünmez. Cephe tek parça gibi okunur.</div></li>
+        </ol>
+      </div>
+      <div class="panel-stage" aria-hidden="true">
+        <div class="panel3d">
+          <div class="ply ply-in"></div>
+          <div class="ply ply-core"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="ply ply-out"></div>
+          <div class="ply-joint"></div>
+        </div>
+        <div class="panel-tags mono">
+          <span class="pt pt-a">A · dış sac</span>
+          <span class="pt pt-b">B · çekirdek</span>
+          <span class="pt pt-c">C · iç sac</span>
+        </div>
+      </div>
+    </div>
+    <div class="panel-progress"><i></i></div>
+  </div>
+</section>
+
+<!-- ============ SÜREÇ ============ -->
+<section class="process" id="surec">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker mono" data-reveal>— Süreç</p>
+      <h2 data-split>Arsadan anahtar teslime.</h2>
+    </header>
+    <div class="timeline">
+      <div class="tl-line"><i></i></div>
+      <ol>
+        <li data-reveal><span class="tl-no mono">01</span><h3>Keşif ve ihtiyaç analizi</h3><p>Arsayı, üretim akışınızı, vinç ve yük ihtiyacınızı yerinde görürüz.</p></li>
+        <li data-reveal><span class="tl-no mono">02</span><h3>Statik proje ve detaylar</h3><p>Taşıyıcı sistem hesaplanır; her kolon, makas ve bağlantı çizime dökülür.</p></li>
+        <li data-reveal><span class="tl-no mono">03</span><h3>Atölyede imalat</h3><p>Kesim, kaynak, delik ve boya atölyede tamamlanır; sahada kaynak en aza iner.</p></li>
+        <li data-reveal><span class="tl-no mono">04</span><h3>Sevkiyat ve saha hazırlığı</h3><p>Parçalar montaj sırasıyla numaralanıp sahaya o sırayla gelir.</p></li>
+        <li data-reveal><span class="tl-no mono">05</span><h3>Montaj</h3><p>Kolon, makas, aşık ve çaprazlar planlanan takvimle ayağa kalkar.</p></li>
+        <li data-reveal><span class="tl-no mono">06</span><h3>Kaplama ve teslim</h3><p>Cephe ve çatı kapanır, detaylar bitirilir, bina kullanıma teslim edilir.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ŞERİT ============ -->
+<section class="band" aria-label="Yaptığımız yapı türleri">
+  <div class="band-row" data-dir="1"><div class="band-track"><span>Üretim tesisi</span><span>Depo</span><span>Lojistik merkezi</span><span>Hangar</span><span>Soğuk hava deposu</span><span>Atölye</span></div></div>
+  <div class="band-row alt" data-dir="-1"><div class="band-track"><span>Çelik çatı</span><span>Sandviç panel</span><span>Trapez sac</span><span>Kaset cephe</span><span>Işıklık</span><span>Kafes makas</span></div></div>
+</section>
+
+<!-- ============ İLKELER ============ -->
+<section class="principles">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker mono" data-reveal>— Neden HESA</p>
+      <h2 data-split>Çeliğin ağırlığını biz taşırız.</h2>
+    </header>
+    <div class="pr-grid">
+      <div class="pr" data-reveal style="--d:0"><span class="pr-ic"><svg viewBox="0 0 40 40"><path d="M8 32V8h6v10h12V8h6v24h-6V22H14v10z" fill="currentColor"/></svg></span><h3>Tek muhatap</h3><p>Proje, imalat, montaj ve kaplama aynı ekipte. Sorumluluk dağılmaz.</p></div>
+      <div class="pr" data-reveal style="--d:1"><span class="pr-ic"><svg viewBox="0 0 40 40"><path d="M6 32L20 8l14 24zM13 26h14" fill="none" stroke="currentColor" stroke-width="3"/></svg></span><h3>Hesaplı tasarım</h3><p>Her eleman yük, kar ve rüzgâr hesabıyla boyutlanır; fazlası da eksiği de yok.</p></div>
+      <div class="pr" data-reveal style="--d:2"><span class="pr-ic"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="13" fill="none" stroke="currentColor" stroke-width="3"/><path d="M20 12v9l6 4" fill="none" stroke="currentColor" stroke-width="3"/></svg></span><h3>Takvime sadakat</h3><p>İmalat ve montaj planı baştan konuşulur, işler o sırayla ilerler.</p></div>
+      <div class="pr" data-reveal style="--d:3"><span class="pr-ic"><svg viewBox="0 0 40 40"><path d="M20 5l13 5v9c0 8-6 14-13 16C13 33 7 27 7 19v-9z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 20l4 4 8-8" fill="none" stroke="currentColor" stroke-width="3"/></svg></span><h3>Önce güvenlik</h3><p>Yüksekte çalışma ve kaldırma işleri planlı, ekipmanlı ve denetimli yapılır.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ İLETİŞİM ============ -->
+<section class="contact" id="iletisim">
+  <div class="contact-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker mono" data-reveal>— İletişim</p>
+    <h2 class="contact-title" data-split>Bir sonraki tesisinizin ilk çizgisini birlikte çizelim.</h2>
+    <div class="contact-grid">
+      <a class="c-item" href="tel:+900000000000" data-reveal style="--d:0"><span class="mono">Telefon</span><b>+90 (000) 000 00 00</b></a>
+      <a class="c-item" href="mailto:info@hesacelik.example" data-reveal style="--d:1"><span class="mono">E-posta</span><b>info@hesacelik.example</b></a>
+      <div class="c-item" data-reveal style="--d:2"><span class="mono">Adres</span><b>Organize Sanayi Bölgesi<br>(adres eklenecek)</b></div>
+    </div>
+    <a class="btn btn-primary btn-lg" href="mailto:info@hesacelik.example?subject=Teklif%20talebi" data-reveal style="--d:3">Teklif isteyin <span class="arr">→</span></a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <svg class="foot-logo" viewBox="0 0 200 104" aria-label="HESA Çelik"><use href="#logo"/></svg>
+    <p class="mono">Çelik fabrika yapıları · Cephe panel kaplama · Çelik çatı sistemleri</p>
+    <div class="foot-end mono">
+      <span>© 2026 HESA Çelik</span>
+      <button class="replay-link" type="button">Açılışı tekrar oynat</button>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
+<script src="assets/js/scene.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
